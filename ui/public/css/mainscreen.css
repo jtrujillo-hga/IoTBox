@@ -1,0 +1,311 @@
+body {font-family: Arial, Helvetica, sans-serif;
+ text-align: center;}
+
+/* I learned how to change button styles, do padding, create borders, and make screens responsive at w3schools.com*/
+
+hr {border-color: #FFFFFF;}
+
+.hidden {
+  display: none;
+}
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.navbar {
+  min-height: 115px;
+}
+
+
+#switchbox {background-color: orange}
+
+#labeler {background-color: aqua}
+
+#status{background-color:lightgreen}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/* Full-width input fields that stretch to screen size*/
+#logger input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#logger input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#logger .button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Make the buttons lighter when user hovers over them*/
+#logger .button:hover {
+  opacity: 0.8;
+}
+
+#logger .cancelbtn:hover {
+  opacity: 0.8;
+}
+
+/* Unique style for the cancel button */
+#logger .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Sets color of the div and puts padding in it */
+#logger .container {
+  padding: 16px;
+  background-color:#f1f1f1;
+}
+
+/* Force checkbox and signup link to the right */
+#logger span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+* {box-sizing: border-box}
+
+/* I learned how to change button styles, do padding, create borders, and make screens responsive at w3schools.com*/
+
+/* Full-width input fields */
+#signup input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#signup input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+#signup button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Style for when user hovers over button */
+#signup button:hover {
+  opacity:.7;
+}
+
+/* Extra styles for the cancel button */
+#signup .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+#signup .cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+#signup .container {
+  padding: 16px;
+  border:1px solid #ccc;
+}
+
+/* Clear floats */
+#signup .buttonholder::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for for screens less than 420 px with media query*/ 
+/* Media query learned from w3schools.com*/
+@media only screen and (max-width: 420px) { 
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+
+  /*body {height: 600px; width: 100%;}*/
+  .signup{height:100%; font-size: 20px;}
+
+  input[type=text], input[type=password] {
+    height: 100%; 
+  }
+
+}
+
+/* Change styles for for screens more than 420 px with media query*/
+@media only screen and (min-width: 420px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+
+  body {height: 100%;}
+}
+
+#status h1 {
+    font-family: "Verdana", Sans-serif;
+    font-size: 1.5em;
+  }
+  #status .status, a {
+    font-family: "Verdana", Sans-serif;
+  }
+  #status h2{
+    font-size: 1em;
+  }
+
+  /* The switch - the box around the slider */
+.s {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+   /*the following css styling was inspired from W3Schools:
+  https://www.w3schools.com/howto/howto_css_circles.asp*/
+
+  /* Hide default HTML checkbox */
+  .s input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  
