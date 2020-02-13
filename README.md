@@ -1,0 +1,14 @@
+# What do the folders contain?
+- AlarmBox/src: contains Embedded hardware code for the project
+- docs: contains documentation for the project
+  - developer: technical notes for the project 
+  - proposal: Project Proposal
+  - reports: Weekly progress reports for the project
+  - user: contains documentation to provide a first-time user the tools they need to use the project application
+- ui: contains the code for the user interface
+  - bin: contains server scripts used to launch the application (BONUS)
+  - node_modules: code used to run the node.js server and communicate with the authentication software (BONUS)
+  - public: public code for the project
+    - css: contains the css used in the project
+    - js: contains javascript code for the project
+      - resources: contains particle.min.js script needed to connect the UI and hardware together
